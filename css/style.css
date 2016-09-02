@@ -175,8 +175,9 @@ body {
 	font-size: 13.5px;
 	color: #b1bcc0;
 	display: block;
-	margin-top: 4px;
-	padding: 5px 18px;	
+	margin-top: 2px;
+	padding: 7px 17px
+	;	
 }
 .menu a:hover {
 	color: #fff;
@@ -216,15 +217,18 @@ body {
 	margin-left: 8px;
 }
 .search {
-	margin-top: 12px;
+	margin-top: 10px;
 	margin-left: 5px;
 	font-size: 10px;
+}
+section {
+	display: block;
 }
 .car {
 	color: #154468;
 	border: 1px solid #9c9c9d;
 	border-radius: 20px;
-	height: 132px;
+	height: 133px;
 	width: 413px;
 	-webkit-box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.4);
 	-moz-box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.4);
@@ -234,13 +238,13 @@ body {
 	margin-bottom: 6px;
 }
 .wheels {
-	margin-top: 4px;
+	margin-top: 5px;
 	color: #154467;
 	font-size: 10px;
 	font-weight: 900;
 }	
 .left {
-	margin-left: 21px;
+	margin-left: 20px;
 }
 .right {
 	margin-right: 21px;
@@ -250,7 +254,15 @@ body {
 	color: #154467;
 	font-size: 12px;
 	font-weight: 900;
-	margin-left: 67px;
+	padding-left: 59px;
+	letter-spacing: 0.3px;
+	
+}
+.car_header {
+	color: #154467;
+	font-size: 12px;
+	font-weight: 900;
+	margin-left: 10px;
 	letter-spacing: 0.3px;
 	margin-top: 1px;
 }
@@ -278,10 +290,8 @@ select {
 	height: 22px;
 	list-style-type: none;
 }
-.disc li>p:nth-child(1){
-	margin-top: 3px;
-}
-.line {
+
+.grup {
 	margin-top: -2px;
 }
 .disc select {
@@ -309,6 +319,7 @@ select {
 	clear: both;
 	color: #000;
 }
+.
 .margin {
 	margin-left: 27px;
 	margin-top: -2px;
@@ -539,7 +550,7 @@ input[type=checkbox] {
 .main {
 	height: 25px;
 	width: 181px;
-	margin-top: 19px;
+	margin-top: 17px;
 	margin-left: 0px;
 	-webkit-box-shadow: 2px 3px 5px -1px rgba(0,0,0,0.3);
 	-moz-box-shadow: 2px 3px 5px -1px rgba(0,0,0,0.3);
@@ -548,7 +559,7 @@ input[type=checkbox] {
 .product {
 	height: 25px;
     width: 156px;
-    padding: 6px 0 0 30px;
+    padding: 5px 0 0 32px;
     background: url(../img/catalog.png) no-repeat;
     color: #114165;
     text-transform: uppercase;
@@ -569,20 +580,20 @@ input[type=checkbox] {
 	height: 23px; 
 	margin: 1px 0 0 4px;
 }
-.catalog>li>li {
+.catalog li li {
 	
 }
-.catalog>li a {
+.catalog  a {
 	font-family: sans-serif;
 	color: #465961;
 	text-decoration: none;
 	font-size: 12px;
 }
-.catalog>li a:hover {
+.catalog  a:hover {
 	color: #0c3256;
 	text-decoration: underline;
 	font-style: italic;
-	font-weight: 900;
+	font-weight: 800;
 	font-size: 13px;
 }
 .tires {
@@ -612,7 +623,7 @@ input[type=checkbox] {
 .content .good {
 	float: left;
 	text-align: center;
-	margin: 15px 9px 9px 20px;
+	margin: 4px 9px 9px 20px;
 }
 .good_img {
     width: 131px;
@@ -665,6 +676,7 @@ input[type=checkbox] {
 	margin-left: 12px;
 	height: 16px;
 }
+
 .checkbox_blue label {
 	width: 8px;
 	height: 8px;
