@@ -1,14 +1,19 @@
-* {
-	margin: 0;
-	padding: 0;
-}
 body {
 	background-color: #fff;
 	font-family: "Lucida Sans", sans-serif;
 }
 .wrapper {
-	width: 912px;
-	margin: 0 auto;
+	width: 910px;
+    margin: 0 auto -100px;
+    position: relative;
+    height: 100%;
+    min-height: 700px;
+}
+header {
+	height: 277px;
+    width: 100%;
+    padding: 13px 0 0 0;
+    position: relative;
 }
 .clearfix:after {
 	content: '';
@@ -17,6 +22,10 @@ body {
 }
 .floatl {
 	float: left;
+	display: block;
+}
+.floatr {
+	float: right;
 	display: block;
 }
 .phone img {
@@ -28,17 +37,17 @@ body {
 	vertical-align: middle; 
 	line-height: 32px; 
 	letter-spacing: 0.3px;
+	padding: 0 2px 0 0; 
 }
 .phone {	
     color: #5e696d;
-	padding-left: 10px; 
 	font-size: 18px;	
 }
 .contact {
 	margin-top: 17px;
 }
 .wrap {
-	margin-left: 19px;
+    margin-left: 17px;
 	height: 27px;
 	border-radius: 3px;
 	color: #fff;
@@ -74,13 +83,13 @@ body {
 	background: transparent;
 	border: none;
 	color: #fff;
-	margin-left: 5px;
+	
 	font-size: 11px;
-	letter-spacing: 0.1px;
+	
 	display: inline-block;
 	border-right: 1px solid #fff;
-	padding-right: 6px;
-	line-height: 10px;
+	padding-right: 5px;
+	line-height: 7px;
 	cursor: pointer;
 }
 .submit:hover {
@@ -88,7 +97,7 @@ body {
 }
 .reg, 
 .forget {
-	line-height: 28px;
+	line-height: 27px;
 	font-size: 11px;
 	color: #fff;
 	letter-spacing: 0.3px;
@@ -96,6 +105,7 @@ body {
 .reg {
 	text-decoration: none;
 	margin-left: 6px;
+
 }
 .forget {
 	margin-left: 19px;
@@ -110,16 +120,12 @@ body {
 .reg:hover {
 	text-decoration: underline;
 }
-.floatr {
-	float: right;
-	display: block;
-}
 .navi {
 	border: 1px solid #bdc4c7;
 	border-radius: 10px;
 	margin-top: 2px;
 	height: 19px;
-    margin-right: 8px;
+    margin-right: 13px;
 	-webkit-box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.1);
 	-moz-box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.1);
 	box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.1);	
@@ -143,11 +149,24 @@ body {
 	margin-right: 11px;
 	display: inline-block;	
 }
-.logo img {
-	padding: 5px 2px 4px 2px;
+.logo {
+	background: url(../img/logo.jpg) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	margin-top: 5px;
+    margin-left: -5px;
+	width: 909px;
+    height: 237px;
 }
+.zazor {
+	float: left; 
+	margin-top: 51px;
+}	
 .wrap_menu {
 	height: 34px;
+	width: 895px;
+	margin-top: 5px;
+	margin-left: -6px;
 	border-radius: 5px;
 	background: rgba(87,96,104,1);
 	-webkit-box-shadow: 3px 3px 7px 0px rgba(0,0,0,0.75);
@@ -167,17 +186,19 @@ body {
 }
 .menu li {
     float: left;
-    list-style-type: none;
+    
 }
-.menu a {
+.menu li a {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 13.5px;
 	color: #b1bcc0;
 	display: block;
-	margin-top: 2px;
-	padding: 7px 17px
-	;	
+	margin-top: 5px;
+	padding: 6px 17px;
+	border-radius: 14px;
+	
+	
 }
 .menu a:hover {
 	color: #fff;
@@ -194,27 +215,27 @@ body {
 .basket {
 	width: 21px;
 	height: 17px; 
-	margin-top: 7px;
+	margin-top: 9px;
 }
 .price, 
 .num {
 	font-size: 12px;
 	color: #0d5a8f;
-	margin-top: 10px;
+	margin-top: 12px;
 }
 .price_title {
 	color: #b1bcc0; 
 	font-size: 11px;
-	margin-top: 10px;
-	margin-right: 12px;
-	margin-left: 15px;
+    margin-top: 12px;
+    margin-right: 14px;
+    margin-left: 16px;
 }
 .num_title {
 	color: #b1bcc0; 
 	font-size: 11px;
-	margin-top: 10px;
-	margin-right: 4px;
-	margin-left: 8px;
+	margin-top: 12px;
+    margin-right: 4px;
+    margin-left: 6px;
 }
 .search {
 	margin-top: 10px;
@@ -230,6 +251,7 @@ section {
 	border-radius: 20px;
 	height: 133px;
 	width: 413px;
+	margin: 17px 0 0 -8px;
 	-webkit-box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.4);
 	-moz-box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.4);
 	box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.4);
@@ -244,17 +266,17 @@ section {
 	font-weight: 900;
 }	
 .left {
-	margin-left: 20px;
+	margin-left: 21px;
 }
 .right {
-	margin-right: 21px;
+	margin-right: 22px;
 	margin-top: 2px;
 }
 .header_car {
 	color: #154467;
 	font-size: 12px;
 	font-weight: 900;
-	padding-left: 59px;
+	padding-left: 58px;
 	letter-spacing: 0.3px;
 	
 }
@@ -263,7 +285,7 @@ section {
 	font-size: 12px;
 	font-weight: 900;
 	margin-left: 10px;
-	letter-spacing: 0.3px;
+    letter-spacing: 0.8px;
 	margin-top: 1px;
 }
 select {
@@ -288,9 +310,35 @@ select {
 }
 .disc li {
 	height: 22px;
-	list-style-type: none;
 }
-
+.search_tire {
+	width: 178px;
+	float: left;
+	margin-top: 1px;
+	margin-left: 17px;
+}
+.search_tire ul {
+	clear: both;
+	font-size: 10px;
+}
+.search_tire li {
+	height: 22px;
+}
+.search_tire select {
+	width: 102px;
+	height: 17px;
+	float: right;
+	background-image: url('../img/arrow.png');
+	background-position: right center;
+	background-repeat: no-repeat;
+	-webkit-box-shadow: 1px 1px 2px 0 rgba(0,0,0, 0.55) inset;
+	-moz-box-shadow: 1px 1px 2px 0 rgba(0,0,0, 0.55) inset;
+	box-shadow: 1px 1px 2px 0 rgba(0,0,0, 0.55) inset;
+}
+.header_car {
+	margin-left: 9px;
+	margin-bottom: 2px; 
+}
 .grup {
 	margin-top: -2px;
 }
@@ -298,6 +346,7 @@ select {
 	width: 102px;
 	height: 17px;
 	float: right;
+    margin: -1px;
 	background-image: url('../img/arrow.png');
 	background-position: right center;
 	background-repeat: no-repeat;
@@ -313,13 +362,42 @@ select {
 	font-size: 9px;
 	letter-spacing: 0.3px;
 	color: #77858b;
+	margin-top: -1px;
 }
-.block_left{
+.block_left {
 	float: left;
 	clear: both;
 	color: #000;
+	margin-top: 4px;
 }
-.
+.block {
+	float: left;
+	clear: both;
+	color: #000;
+	margin-top: -2px;
+}
+.block_select {
+	float: left;
+	clear: both;
+	color: #000;
+	margin-top: 2px;
+}
+.block_right {
+	float: left;
+	clear: both;
+	color: #000;
+	margin-top: -1px;
+}
+.block_tire {
+	float: left;
+	clear: both;
+	color: #000;
+	margin-top: 2px;
+}
+.search_tire .year {
+	width: 60px;
+	margin-right: 43px;
+}
 .margin {
 	margin-left: 27px;
 	margin-top: -2px;
@@ -339,24 +417,24 @@ select {
 	color: #000;
 	border: 1px solid #9c9c9d;
 	border-radius: 16px;
-	height: 132px;
+	height: 134px;
 	width: 191px;
 	margin-left: 14px;
 	-webkit-box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.4);
 	-moz-box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.4);
 	box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.4);	
 }
-.search_bus,
-.header_car {
-	margin-left: 9px;
-	margin-bottom: 2px; 
+.search_bus {
+	margin-left: 14px;
+    margin-top: 16px;
 }
 .search_bus select {
 	width: 51px;
 	height: 17px;
 	float: right;
-	background-image: url('../img/arrow.png') no-repeat;
+	background-image: url('../img/arrow.png');
 	background-position: right center;
+	background-repeat: no-repeat;
 	-webkit-box-shadow: 1px 1px 2px 0 rgba(0,0,0, 0.55) inset;
 	-moz-box-shadow: 1px 1px 2px 0 rgba(0,0,0, 0.55) inset;
 	box-shadow: 1px 1px 2px 0 rgba(0,0,0, 0.55) inset;
@@ -364,7 +442,7 @@ select {
 .size {
 	height: 17px;
 	margin-top: 6px;
-	padding-right: 15px;
+    padding-right: 13px;
 }
 .size p {
 	float: left;
@@ -378,9 +456,17 @@ select {
 	margin-right: 6px;
 	padding-top: 6px;
 }
+.bus_header {
+	color: #154467;
+	font-size: 12px;
+	font-weight: 900;
+	margin-left: 9px;
+	letter-spacing: 0.3px;
+	margin-top: 3px;
+}
 .radius {
-margin-top: 7px;
-padding-right: 87px;
+	margin-top: 7px;
+	padding-right: 87px;
 }
 .radius p {
 	float: left;
@@ -396,6 +482,9 @@ padding-right: 87px;
 	margin-left: 13px;
 	margin-top: 6px;
 }
+.season_left {
+
+}
 .checkbox_line { 
 	position: relative;
 	margin-top: 2px;
@@ -405,6 +494,12 @@ padding-right: 87px;
 	display: inline-block;
 	font-family: sans-serif;
 	font-size: 12px;
+}
+.lab {
+	display: inline-block;
+	font-family: sans-serif;
+	font-size: 12px;
+	margin-top: 2px;
 }
 .checkbox_style {
 	position: relative;
@@ -416,8 +511,8 @@ padding-right: 87px;
 	position: absolute;
 	width: 10px;
 	height: 10px;
-	top: 0px;
-	left: 0px;
+	top: 2px;
+	left: 1px;
 	border-radius: 1px;
 	-webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.7), 0px 1px 0px rgba(255,255,255,.4);
 	-moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.7), 0px 1px 0px rgba(255,255,255,.4);
@@ -429,7 +524,7 @@ padding-right: 87px;
 	font-size: 12px;
 }
 .but_season { 
-	margin-top: -5px; 
+	margin-top: -2px; 
 	margin-right: 12px;
 }
 input[type=checkbox] { 
@@ -437,13 +532,17 @@ input[type=checkbox] {
 	visibility: hidden;
 	margin: 0px;
 }
+
+
+
 .search_disc {
 	font-family: sans-serif;
 	color: #154468;
 	border: 1px solid #9c9c9d;
 	border-radius: 16px;
-	height: 132px;
-	width: 266px;
+	height: 134px;
+    width: 267px;
+    margin-top: 16px;
 	margin-left: 10px;
 	-webkit-box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.4);
 	-moz-box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.4);
@@ -456,7 +555,7 @@ input[type=checkbox] {
 	float: left;
 	margin-left: 9px;
 	height: 16px;
-	margin-top: 3px;
+	margin-top: 5px;
 	width: 57px;
 	background-image: url('../img/arrow.png');
 	background-position: right center;
@@ -469,6 +568,7 @@ input[type=checkbox] {
 	margin-top: 7px; 
 	margin-left: 15px; 
 	font-size: 11px;
+	letter-spacing: 1px;
 }
 .second { 
 	margin-left: 16px; 
@@ -482,13 +582,13 @@ input[type=checkbox] {
 .quantity { 
 	margin-top: 15px; 
 	height: 17px; 
-	margin-left: 28px;
+	margin-left: 35px;
 	width: 50px;
 }
 .search_disc 
 .diameter { 
-	margin-top: 14px; 
-	margin-left: 20px;;
+	margin-top: 15px;
+    margin-left: 19px;
 }
 .search_disc 
 .header_car {
@@ -500,13 +600,14 @@ input[type=checkbox] {
 }
 .search_disc_right { 
 	width: 80px; 
-	margin-top: 4px; 
+	margin-top: 5px; 
 	color: #000; 
 }
 .search_disc_right select {
 	display: block;
 	float: none;
 	margin-left: 1px;
+    margin-top: 3px;
 }
 .text_dco {
 	font-size: 8px;
@@ -516,7 +617,7 @@ input[type=checkbox] {
 	margin-top:8px;
 }
 .search_disc .but {
-	margin-top: 4px;
+	margin-top: 5px;
 	margin-right: 13px;
 }
 .border_r {
@@ -525,16 +626,54 @@ input[type=checkbox] {
 	width: 175px;
 	margin-top: 2px; 
 }
+.block_search {
+	float: left;
+	clear: both;
+	color: #000;
+	margin-top: 8px;
+}
+.littel {
+	font-size: 9px;
+	letter-spacing: 0.3px;
+	color: #77858b;
+	margin-top: -1px;
+}
+.littel_second {
+	font-size: 9px;
+	letter-spacing: 1px;
+	color: #77858b;
+	margin-top: 0;
+}
+.block_searchr {
+	float: left;
+	clear: both;
+	color: #000;
+	margin-top: 4px;
+   
+}
+.block_searchl {
+	float: left;
+	clear: both;
+	color: #000;
+	margin-top: 2px;
+    letter-spacing: 1px;
+}
+.littel_first {
+	font-size: 9px;
+	letter-spacing: 1px;
+	color: #77858b;
+	margin-top: 1px;
+}
+
+
 .side_block {
 	font-size: 12px;
 	color: #114165;
 }
 .side_block li {
-	list-style-type: none;                                                                                                                                                                                                                                                                                                            
-}
-.side_block li li {
 	list-style-type: circle;
-	margin: 7px 10px 12px 53px;
+	margin: 8px 0 12px 41px;
+    font-size: 13px;
 }
 .side_left {
 	border: 1px solid #79878d;
@@ -543,7 +682,7 @@ input[type=checkbox] {
     -moz-box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.1);
     box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.1);
     width: 148px;
-    margin-left: 2px;
+    margin-left: -6px;
     height: 25px;
     margin-top: 14px;
 }
@@ -551,7 +690,7 @@ input[type=checkbox] {
 	height: 25px;
 	width: 181px;
 	margin-top: 17px;
-	margin-left: 0px;
+	margin-left: -8px;
 	-webkit-box-shadow: 2px 3px 5px -1px rgba(0,0,0,0.3);
 	-moz-box-shadow: 2px 3px 5px -1px rgba(0,0,0,0.3);
 	box-shadow: 2px 3px 5px -1px rgba(0,0,0,0.3);
@@ -559,26 +698,39 @@ input[type=checkbox] {
 .product {
 	height: 25px;
     width: 156px;
-    padding: 5px 0 0 32px;
+    padding: 5px 0 0 25px;
     background: url(../img/catalog.png) no-repeat;
     color: #114165;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 13px;
     font-family: sans-serif;
-	margin: 2px 0 0 4px; 
+	margin: 2px 0 0 2px; 
 }
 .circle {
 	height: 25px;
     width: 156px;
-    padding: 6px 0 0 30px;
+    padding: 7px 0 0 26px;
     background: url(../img/crug.png) no-repeat;
     color: #114165;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 13px;
     font-family: sans-serif;
 	width: 22px;
 	height: 23px; 
 	margin: 1px 0 0 4px;
+}
+.circle_disc {
+	height: 25px;
+    width: 156px;
+    padding: 6px 0 0 28px;
+    background: url(../img/crug.png) no-repeat;
+    color: #114165;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: sans-serif;
+	width: 22px;
+	height: 23px; 
+	margin: 1px 0 0 3px;
 }
 .catalog li li {
 	
@@ -589,19 +741,21 @@ input[type=checkbox] {
 	text-decoration: none;
 	font-size: 12px;
 }
-.catalog  a:hover {
+.catalog a:hover {
 	color: #0c3256;
 	text-decoration: underline;
 	font-style: italic;
 	font-weight: 800;
-	font-size: 13px;
+	font-size: 12px;
 }
 .tires {
-	margin-top: -6px;
+	margin-top: -7px;
 }
 .bolts {
 	margin-top: -8px;
 }
+
+
 .content {
 	width: 526px;
 	background: rgba(201,207,209,1);
@@ -614,7 +768,7 @@ input[type=checkbox] {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9cfd1', endColorstr='#93a7b0', GradientType=0 );
 	margin-top: 16px;
 	margin-left: 10px;
-	padding-bottom: 25px;
+	padding-bottom: 18px;
 	border-radius: 4px;
 }
 .content a {
@@ -623,15 +777,34 @@ input[type=checkbox] {
 .content .good {
 	float: left;
 	text-align: center;
-	margin: 4px 9px 9px 20px;
+	margin: 14px 9px 11px 20px;
+}
+.good_first {
+	float: left;
+	text-align: center;
+	margin: 14px 11px 11px 21px;
 }
 .good_img {
     width: 131px;
     background-color: #fff;
     border-radius: 7px;
     border: 1px solid #a4aeb1;
-    padding: 3px;
- }   
+    padding: 5px 3px 2px 2px;
+}
+.second_img {
+	width: 131px;
+    background-color: #fff;
+    border-radius: 7px;
+    border: 1px solid #a4aeb1;
+    padding: 4px 3px 1px 0px;
+}
+.img_good {
+    width: 131px;
+    background-color: #fff;
+    border-radius: 7px;
+    border: 1px solid #a4aeb1;
+    padding: 5px 2px 2px 0px;
+}
 .good {
 	width: 140px;
 }
@@ -649,12 +822,41 @@ input[type=checkbox] {
 	color: #114165;
 	font-weight: 700;
 	margin-top: 4px;
+	margin-left: 10px;
 	font-family: Arial;
 	font-style: italic;
 }
 .good_currency { 
 	font-size: 12px; 
-	margin-left: 5px;
+	margin-left: 8px;
+	font-weight: 700;
+}
+.second_price { 
+	font-size: 16px;
+	color: #114165;
+	font-weight: 700;
+	margin-top: 5px;
+	margin-left: 9px;
+	font-family: Arial;
+	font-style: italic;
+}
+.second_currency { 
+	font-size: 12px; 
+	margin-left: 9px;
+	font-weight: 700;
+}
+.price_good { 
+	font-size: 16px;
+	color: #114165;
+	font-weight: 700;
+	margin-top: 4px;
+	margin-left: 7px;
+	font-family: Arial;
+	font-style: italic;
+}
+.currency_good { 
+	font-size: 12px; 
+	margin-left: 9px;
 	font-weight: 700;
 }
 .side_right {
@@ -695,7 +897,7 @@ input[type=checkbox] {
 	border-radius: 13px;
 	color: #fff;
 	height: 26px;
-	margin-top: 4px;
+	margin-top: 18px;
 	width: 80px;
 	font-size: 12px;
 	text-transform: uppercase;
@@ -712,19 +914,178 @@ input[type=checkbox] {
     -moz-box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.4);
     box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.4);
 }
-.logo_img {
+.side_menu_r {
+	font-size: 12px;
+	color: #114165;
+}
+.product_right {
+	height: 25px;
+    width: 156px;
+    padding: 5px 0 0 26px;
+    background: url(../img/catalog.png) no-repeat;
+    color: #114165;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: sans-serif;
+	margin: 1px 0 0 3px; 
+}
+.side_left_menu {
+	border: 1px solid #79878d;
+    border-radius: 15px;
+    -webkit-box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.1);
+    box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.1);
+    width: 148px;
+    margin-left: -6px;
+    height: 25px;
+    margin-top: 14px;
+}
+.main_right {
+	height: 25px;
+	width: 181px;
+	margin-top: 18px;
+	margin-left: 0px;
+	-webkit-box-shadow: 2px 3px 5px -1px rgba(0,0,0,0.3);
+	-moz-box-shadow: 2px 3px 5px -1px rgba(0,0,0,0.3);
+	box-shadow: 2px 3px 5px -1px rgba(0,0,0,0.3);
+}
+.side_left-r {
+	border: 1px solid #79878d;
+    border-radius: 15px;
+    -webkit-box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.1);
+    box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.1);
+    width: 136px;
+    margin-left: 14px;
+    height: 26px;
+    margin-top: 14px;
+}
+.circle_right {
+	height: 25px;
+    width: 156px;
+    padding: 6px 0 0 29px;
+    background: url(../img/crug.png) no-repeat;
+    color: #114165;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: sans-serif;
+	width: 22px;
+	height: 23px; 
+	margin: 1px 0 0 4px;
+}
+.checkbox_style-r {
+	position: relative;
+	display: inline-block;
+	margin-left: 12px;
+}
+.checkbox_style-r label {
+	cursor: pointer;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	top: 2px;
+	left: 1px;
+	border-radius: 1px;
+	-webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.7), 0px 1px 0px rgba(255,255,255,.4);
+	-moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.7), 0px 1px 0px rgba(255,255,255,.4);
+	box-shadow: inset 1px 1px 1px rgba(0,0,0,0.7), 0px 1px 0px rgba(255,255,255,.4);
+}
+.side_left_right {
+	border: 1px solid #79878d;
+    border-radius: 15px;
+    -webkit-box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.1);
+    box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.1);
+    width: 136px;
+    margin-left: 14px;
+    height: 26px;
+    margin-top: 11px;
+}
+.circle-r {
+	height: 25px;
+    width: 156px;
+    padding: 6px 0 0 30px;
+    background: url(../img/crug.png) no-repeat;
+    color: #114165;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: sans-serif;
+	width: 22px;
+	height: 23px; 
+	margin: 1px 0 0 3px;
+}
+
+.car_logos li {
+	display: inline-block;
+}
+.car_log a {
+	display: block;
+	
+}
+.toyota {
+	width: 83px; 
+	height: 21px;
+	margin-top: 11px;
+    margin-left: 0px;
+}
+.bitgest img {
+	width: 97px; 
+	height: 14px; 
+	margin-bottom: 7px; 
+	margin-left: 8px;
+}
+.continent img {
+	width: 77px; 
+	height: 21px; 
+	margin-left: 9px; 
+}
+.gooper img {
+	width: 59px; 
+	height: 21px; 
+	margin-bottom: 1px;
+	margin-left: 10px;
+}
+.avon img {
+	width: 77px; 
+	height: 13px; 
+	margin-bottom: 7px; 
+	margin-left: 8px;
+}
+.factory img {
+	width: 57px; 
+	height: 27px; 
+	margin-bottom: -2px;
+    margin-left: 8px;
+}
+.pirelly img {
+	width: 61px; 
+	height: 14px;
+	margin-bottom: 6px;  
+	margin-left: 9px; 
+}
+.dunlop img {
+	width: 72px; 
+	height: 13px;
+	margin-bottom: 7px; 
+	margin-left: 10px; 
+}
+
+
+.car_logos {
 	height: 27px;
-	width: 676px;
+	width: 677px;
 	margin: 30px 110px;
 }
 footer {
 	text-align: center;
 	background-color: #213a4d;
 	height: 100px;
+	margin-right: 7px;
+    margin-left: -7px;
 }
 footer div {
 	font-size: 12px;
-	padding-top: 10px;
+	padding-top: 13px;
 	margin: 0 auto;
 	padding-bottom: 16px;
 	color: #bec6c9;
@@ -740,10 +1101,10 @@ footer a:hover {
 footer span {
 	margin: 0px 7px; 
 }
+.contact_span {
+	margin: 0px 7px; 
+}
 .copy  {
 	color: #7f4740;
 	font-size: 10px;
 }
-
-
-

@@ -2,18 +2,20 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>zazor</title>
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="wrapper">
-		<header>
-			<div class="contact clearfix">
-				<div class="phone floatl">
-				<img src="img/phone.png" alt="">
-				<span>(044)123-45-67 (044)567-89-10</span>
-				</div>
-			<div class="wrap floatl ">
+<div class="wrapper">
+	<header>
+		<div class="contact clearfix">
+			<div class="phone floatl">
+			<img src="img/phone.png" alt="">
+			<span>(044)123-45-67</span> 
+			<span>(044)567-89-10</span>
+			</div>
+		<div class="wrap floatl ">
 					<div class="icon floatl"><img src="img/icon.png" alt=""></div>
 					<form class="login_form floatl" action="#">
 						<input class="login" type="text" name="login" placeholder="логин">
@@ -22,15 +24,15 @@
 					</form>
 					<a class="reg floatl" href="#">регистрация</a>
 					<a class="forget floatl" href="#">забыли пароль?</a>
-			</div>
-			<div class="navi floatr">
+		</div>
+		<div class="navi floatr">
 					<a href="#"><div class="home"><img src="img/home.png" alt=""></div></a>
 					<a href="#"><div class="map"><img src="img/map.png" alt=""></div></a>
 					<a href="#"><div class="letter"><img src="img/letter.png" alt=""></div></a>
-			</div>
+		</div>
+		</div>
 			<div class="logo clearfix">
-				<img src="img/logo.png" alt="">
-			</div>
+				<img class="zazor" src="img/zazor.jpg" alt="">
 			</div>
 			<nav class="wrap_menu clearfix">
 				<ul class="menu floatl clearfix">
@@ -40,17 +42,19 @@
 					<li><a href="#">статьи</a></li>
 					<li><a href="#">контакты</a></li>
 				</ul>
+				<div class="num_menu">
 				<span class="price floatr">0,00 грн.</span>
 				<span class="price_title floatr">на сумму:</span>
 				<span class="num floatr">0</span>
 				<span class="num_title floatr">товаров:</span>
 				<div class="basket floatr"><img src="img/basket.png" alt=""></div>
+				</div>
 			</nav>
-        </header>
+	</header>
 	<div class="search clearfix">
-		<section>
-			<form action="#" class="car  floatl">
-				<div class="car_search clearfix">
+	<section>
+		<form action="#" class="car  floatl">
+			<div class="car_search clearfix">
 					<p class="wheels left floatl">Диски:</p>
 					<p class="header_car floatl">Поиск по автомобилю</p>
 					<p class="wheels right floatr">Шины:</p>
@@ -65,7 +69,7 @@
 							</select>
 						</li>
 						<li>
-							<div class="block_left grup">
+							<div class="block grup">
 								<p>Модель</p>
 								<p class ="small">автомобиля:</p>
 									</div>
@@ -75,7 +79,7 @@
 									</select>
 						</li>
 						<li>
-							<div class="block_left grup">
+							<div class="block grup">
 								<p>Год выпуска:</p>
 								<p class="small">автомобиля:</p>
 									</div>
@@ -85,7 +89,7 @@
 									</select>
 						</li>
 						<li>
-							<p class="block_left">Комплектация:</p>
+							<p class="block_select">Комплектация:</p>
 								<select>
 									<option></option>
 									<option></option>
@@ -94,7 +98,7 @@
 					</ul>
 				</div>
 
-				<div class ="disc margin">
+				<div class ="search_tire margin">
 					<ul>
 						<li>
 							<p class="block_left">Марка <span class="small">авто:</span></p>
@@ -104,7 +108,7 @@
 								</select>
 						</li>
 						<li>
-							<div class="block_left grup">
+							<div class="block_right grup">
 								<p>Модель</p>
 								<p class ="small">автомобиля:</p>
 							</div>
@@ -114,7 +118,7 @@
 							</select>
 						</li>
 						<li>
-							<div class="block_left grup">
+							<div class="block_right grup">
 								<p>Год выпуска:</p>
 								<p class="small">автомобиля:</p>
 							</div>
@@ -124,7 +128,7 @@
 							</select>
 						</li>
 						<li>
-							<p class="block_left">Комплектация:</p>
+							<p class="block_tire">Комплектация:</p>
 							<select>
 								<option></option>
 								<option></option>
@@ -133,29 +137,30 @@
 					</ul>
 				</div>
 				<input class="but" type="submit" value="поиск...">
-			</form>
-		</section>
+		</form>
+	</section>
+
 	<section>
 		<form action="#" class="search_bus floatl clearfix">
 			<div class="clearfix">
-				<p class="car_header floatl">поиск шин</p>
+				<p class="bus_header floatl">поиск шин</p>
 			</div>
 			<div class="size clearfix">
 				<p>Размер:</p>
 				<select>
-					<option>133</option>
-					<option>221</option>
+					<option></option>
+					<option></option>
 				</select>
 				<span class="floatr">/</span>
 				<select >
-					<option>167</option>
+					<option>145</option>
 					<option>321</option>
 				</select>
 			</div>
 			<div class="radius clearfix">
 				<p>R</p>
 				<select >
-					<option>17</option>
+					<option>12</option>
 					<option>15</option>
 				</select>
 			</div>
@@ -181,13 +186,14 @@
 							<input type="checkbox" id = "allseason">
 							<label for="allseason"></label>
 						</div>
-						<div class="label">всесез</div>
+						<div class="lab">всесез</div>
 					</div>
 				</div>
 			</div> 
 		<input class="but but_season" type="submit" value="поиск...">
 		</form>
 	</section>
+
 	<section>
 		<form action="#" class="search_disc floatl">
 			<div class="border_r floatl">
@@ -196,17 +202,17 @@
 				</div>
 				<ul>
 					<li>
-						<p class="block_left first">Диаметр <span class="small">диска:</span></p>
+						<p class="block_search first">Диаметр <span class="littel">диска:</span></p>
 						<select>
 							<option>14</option>
 							<option>13</option>
 						</select>
 					</li>
 					<li>
-						<div class="block_left second">
+						<div class="block_searchr second">
 							<p>Количество</p>
-							<p class ="small">крепёжных</p>
-							<p class ="small">отверстий:</p>
+							<p class ="littel_second">крепёжных</p>
+							<p class ="littel_second">отверстий:</p>
 						</div>
 						<select class="quantity">
 							<option>3</option>
@@ -214,11 +220,11 @@
 						</select>
 					</li>
 					<li>
-						<div class="block_left three">
+						<div class="block_searchl three">
 							<p>Диаметр</p>
-							<p class="small">расположения</p>
-							<p class="small">крепёжных</p>
-							<p class="small">отверстий:</p>
+							<p class="littel_first">расположения</p>
+							<p class="littel_first">крепёжных</p>
+							<p class="littel_first">отверстий:</p>
 						</div>
 						<select class="diameter">
 							<option>12</option>
@@ -249,15 +255,15 @@
 		</form>
 	</section>
 	</div>
+	
 
 	<main class="content-wrapper clearfix">
-			<nav class="side_block floatl">
-				<ul class="catalog">
+			<nav class=" floatl">
+				<div class="catalog">
 					<div class="side_left main">
 						<p class="product">каталог продукции:</p>
 					</div>
-					<li>
-						<ul>
+						<ul class="side_block">
 							<div class="side_left">
 								<p class="circle">шины</p>
 							</div>
@@ -266,34 +272,29 @@
 							<li><a href="#">Наименование 3</a></li>
 							<li><a href="#">Наименование 4</a></li>
 						</ul>
-					</li>
-					<li>
-						<ul >
+						<ul class="side_block">
 							<div class="side_left tires">
-							<p class="circle">диски</p>
+							<p class="circle_disc">диски</p>
 							</div>
 							<li><a href="#">Наименование 1</a></li>
 							<li><a href="#">Наименование 2</a></li>
 							<li><a href="#">Наименование 3</a></li>
 							<li><a href="#">Наименование 4</a></li>
 						</ul>
-					</li>
-					<li>
-						<ul>
+						<ul class="side_block">
 							<div class="side_left bolts">
-								<p class="circle">болты</p>
+								<p class="circle_disc">болты</p>
 							</div>
 							<li><a href="#">Наименование 1</a></li>
 							<li><a href="#">Наименование 2</a></li>
 							<li><a href="#">Наименование 3</a></li>
 							<li><a href="#">Наименование 4</a></li>
 						</ul>
-					</li>
-				</ul>
+					</div>
 			</nav>
-			
+
 			<div class="content floatl clearfix">
-				<figure class="good">
+				<figure class="good_first">
 					<a href="#">
 						<div class="goodyear">Goodyear</div>
 						<figcaption class="good_title">Ultra Grip Extreme</figcaption>
@@ -305,19 +306,19 @@
 					<a href="#">
 						<div class="goodyear">Nokian</div>
 						<figcaption class="good_title">Hakkapeliitta R</figcaption>
-						<div class="good_img"> <img src="img/nokian.png" alt=""></div>
-						<div class="good_price">115.00<span class="good_currency">грн.</span></div>
+						<div class="second_img"> <img src="img/nokian.png"></div>
+						<div class="second_price">115.00<span class="second_currency">грн.</span></div>
 					</a>
 				</figure>
 				<figure class="good">
 					<a href="">
 						<div class="goodyear">Hankook</div>
 						<figcaption class="good_title">K 708 155/65 R14t</figcaption>
-						<div class="good_img"><img src="img/hankook.png" alt=""></div>
-						<div class="good_price">393.00<span class="good_currency">грн.</span></div>
+						<div class="img_good"><img src="img/hankook.png"></div>
+						<div class="price_good">393.00<span class="currency_good">грн.</span></div>
 					</a>
 				</figure>
-				<figure class="good">
+				<figure class="good_first">
 					<a href="#">
 						<div class="goodyear">Goodyear</div>
 						<figcaption class="good_title">Ultra Grip Extreme</figcaption>
@@ -329,23 +330,23 @@
 					<a href="#">
 						<div class="goodyear">Nokian</div>
 						<figcaption class="good_title">Hakkapeliitta R</figcaption>
-						<div class="good_img"> <img src="img/nokian.png" alt="Goodyear"></div>
-						<div class="good_price">115.00<span class="good_currency">грн.</span></div>
+						<div class="second_img"> <img src="img/nokian.png"></div>
+						<div class="second_price">115.00<span class="second_currency">грн.</span></div>
 					</a>
 				</figure>
 				<figure class="good">
 					<a href="#">
 						<div class="goodyear">Hankook</div>
 						<figcaption class="good_title">K 708 155/65 R14t</figcaption>
-						<div class="good_img"> <img src="img/hankook.png"  alt="Goodyear"></div>
-						<div class="good_price">393.00<span class="good_currency">грн.</span></div>
+						<div class="img_good"> <img src="img/hankook.png"></div>
+						<div class="price_good">393.00<span class="currency_good">грн.</span></div>
 					</a>
 				</figure>
-				<figure class="good">
+				<figure class="good_first">
 					<a href="#">
 						<div class="goodyear">Goodyear</div>
 						<figcaption class="good_title">Ultra Grip Extreme</figcaption>
-						<div class="good_img"> <img src="img/goodyear.png"  alt="Goodyear"></div>
+						<div class="good_img"> <img src="img/goodyear.png"></div>
 						<div class="good_price">90.00<span class="good_currency">грн.</span></div>
 					</a>
 				</figure>
@@ -353,47 +354,48 @@
 					<a href="#">
 						<div class="goodyear">Nokian</div>
 						<figcaption class="good_title">Hakkapeliitta R</figcaption>
-						<div class="good_img"> <img src="img/nokian.png" alt="Goodyear"></div>
-						<div class="good_price">115.00<span class="good_currency">грн.</span></div>
+						<div class="second_img"> <img src="img/nokian.png"></div>
+						<div class="second_price">115.00<span class="second_currency">грн.</span></div>
 					</a>
 				</figure>
 				<figure class="good">
 					<a href="#">
 						<div class="goodyear">Hankook</div>
 						<figcaption class="good_title">K 708 155/65 R14t</figcaption>
-						<div class="good_img"> <img src="img/hankook.png" alt="Goodyear"></div>
-						<div class="good_price">393.00<span class="good_currency">грн.</span></div>
+						<div class="img_good"> <img src="img/hankook.png"></div>
+						<div class="price_good">393.00<span class="currency_good">грн.</span></div>
 					</a>
 				</figure>
 			</div>
-			<aside class="side_block side_right floatl">
+
+			<aside class="side_menu_r side_right floatl">
 				<form action="#">
-					<ul class="catalog">
-						<div class="side_left main">
-							<p class="product">Бренды:</p>
+					<div class="catalog">
+						<div class="side_left_menu main_right">
+							<p class="product_right">Бренды:</p>
 						</div>
-						<li>
+						
 						<ul>
 							<li>
-								<div class="side_left menu-r">
-									<p class="circle">Шины</p>
+								<div class="side_left-r menu-r">
+									<p class="circle_right">Шины</p>
 								</div>
 								<div class="line">
-									<div class="checkbox_style checkbox_blue">
+									<div class="checkbox_style-r checkbox_blue">
 										<input type="checkbox" id = "brand11">
 										<label  for="brand11"></label>
 									</div>
 									<div class="label">Бренд 1</div>
 								</div>
 								<div class="line">
-									<div class="checkbox_style checkbox_blue ">
+									<div class="checkbox_style-r checkbox_blue ">
 										<input type="checkbox" id = "brand12">
 										<label  for="brand12"></label>
 									</div>
 									<div class="label">Бренд 2</div>
 								</div>
 								<div class="line">
-									<div class="checkbox_style checkbox_blue">
+									<div class="checkbox_style-r checkbox_blue">
 										<input type="checkbox" id = "brand13">
 										<label  for="brand13"></label>
 									</div>
@@ -401,29 +403,29 @@
 								</div>
 							</li>
 						</ul>
-						</li>
-						<li>
+						
+						
 						<ul>
 							<li>
-								<div class="side_left menu-r">
-									<p class="circle">Диски</p>
+								<div class="side_left_right menu-r">
+									<p class="circle-r">Диски</p>
 								</div>
 								<div class="line">
-									<div class="checkbox_style checkbox_blue">
+									<div class="checkbox_style-r checkbox_blue">
 										<input type="checkbox" id = "brand21">
 										<label  for="brand21"></label>
 									</div>
 									<div class="label">Бренд 1</div>
 								</div>
 								<div class="line">
-									<div class="checkbox_style checkbox_blue ">
+									<div class="checkbox_style-r checkbox_blue ">
 										<input type="checkbox" id = "brand22">
 										<label  for="brand22"></label>
 									</div>
 									<div class="label">Бренд 2</div>
 								</div>
 								<div class="line">
-									<div class="checkbox_style checkbox_blue">
+									<div class="checkbox_style-r checkbox_blue">
 										<input type="checkbox" id = "brand23">
 										<label  for="brand23"></label>
 									</div>
@@ -431,16 +433,28 @@
 								</div>
 							</li>
 						</ul>
-						</li>
-					</ul>
+						
+					</div>
 					<input class="buttom_r" type="submit" value="Выбрать">
 				</form>
 			</aside>
 		</main>
 
-		<div class="logo_img">
-			<img src="img/img_logo.png" alt="">
-		</div>
+
+		<div class="logos">
+		<ul class="car_logos">
+			<li class="toyota"><a href="#"><img src="img/toyota.png" alt=""></a></li>
+			<li class="bitgest"><a href="#"><img src="img/bitgest.png" alt=""></a></li>
+			<li class="continent"><a href="#"><img src="img/continent.png" alt=""></a></li>
+			<li class="gooper"><a href="#"><img src="img/gooper.png" alt=""></a></li>
+			<li class="avon"><a href="#"><img src="img/avon.png" alt=""></a></li>
+			<li class="factory"><a href="#"><img src="img/factory.png" alt=""></a></li>
+			<li class="pirelly"><a href=""><img src="img/pirelly.png" alt=""></a></li>
+			<li class="dunlop"><a href=""><img src="img/dunlop.png" alt=""></a></li>
+		</ul>
+	</div>
+
+
 		<footer>
 			<div>
 				<a href="#">О компании</a>
@@ -448,12 +462,15 @@
 				<a href="#">Доставка</a>
 				<span>|</span>
 				<a href="#">Статьи</a>
-				<span>|</span>
+				<span class="contact_span">|</span>
 				<a href="#">Контакты</a>
 			</div>
 			<p class="copy">Создание сайта &copy; Global Vision</p>
 		</footer>
 
-	</div>
+
+
+</div>
+	
 </body>
 </html>
